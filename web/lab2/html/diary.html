@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Дневник</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;800&family=Unbounded:wght@500;800&display=swap&subset=cyrillic" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+<header class="topbar">
+  <a class="logo" href="index.html">Frame</a>
+  <nav>
+    <a href="index.html">Главная</a>
+    <a href="catalog.html">Каталог</a>
+    <a href="diary.html" class="active">Дневник</a>
+    <a href="lists.html">Сборки</a>
+  </nav>
+  <a class="link-button dark" href="diary.html">Начать дневник</a>
+</header>
+<main>
+  <section class="tile tile-pink columns-5">
+    <h1>Дневник</h1>
+  </section>
+  <section class="tile tile-light columns-7">
+    <p class="lead">Отмечайте просмотренные фильмы, ставьте оценки и сохраняйте свои впечатления, чтобы не потерять ни одной истории.</p>
+  </section>
+  <section class="tile tile-light columns-8 rows-3">
+    <h2>Сентябрь – октябрь</h2>
+    <div class="table-wrapper">
+      <table id="diary">
+        <thead>
+        <tr>
+          <th class="align-left">Дата</th>
+          <th class="align-left">Фильм</th>
+          <th class="align-center">Оценка</th>
+          <th class="align-right">Длительность</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+          <td class="align-left">05.10.2026</td>
+          <td class="align-left"><img class="mini-poster" src="../images/poster1.png" alt="Постер: Человек-паук">Человек-паук</td>
+          <td class="align-center">★★★★★</td>
+          <td class="align-right">106 мин</td>
+        </tr>
+        <tr>
+          <td class="align-left">03.10.2026</td>
+          <td class="align-left"><img class="mini-poster" src="../images/poster2.png" alt="Постер: Вот это драма!">Вот это драма!</td>
+          <td class="align-center">★★★★★</td>
+          <td class="align-right">132 мин</td>
+        </tr>
+        <tr>
+          <td class="align-left">29.09.2026</td>
+          <td class="align-left"><img class="mini-poster" src="../images/poster3.png" alt="Постер: Одиссея">Одиссея</td>
+          <td class="align-center">★★★★</td>
+          <td class="align-right">139 мин</td>
+        </tr>
+        <tr>
+          <td class="align-left">25.09.2026</td>
+          <td class="align-left"><img class="mini-poster" src="../images/poster4.png" alt="Постер: Унесённые призраками">Унесённые призраками</td>
+          <td class="align-center">★★★★★</td>
+          <td class="align-right">125 мин</td>
+        </tr>
+        <tr>
+          <td class="align-left">21.09.2026</td>
+          <td class="align-left"><img class="mini-poster" src="../images/poster5.png" alt="Постер: Одержимость">Одержимость</td>
+          <td class="align-center">★★★★</td>
+          <td class="align-right">107 мин</td>
+        </tr>
+        <tr>
+          <td class="align-left">18.09.2026</td>
+          <td class="align-left"><img class="mini-poster" src="../images/poster6.png" alt="Постер: Драйв">Драйв</td>
+          <td class="align-center">★★★★</td>
+          <td class="align-right">100 мин</td>
+        </tr>
+        <tr>
+          <td class="align-left">12.09.2026</td>
+          <td class="align-left"><img class="mini-poster" src="../images/poster7.png" alt="Постер: Амели">Амели</td>
+          <td class="align-center">★★★★</td>
+          <td class="align-right">122 мин</td>
+        </tr>
+        <tr>
+          <td class="align-left">10.09.2026</td>
+          <td class="align-left"><img class="mini-poster" src="../images/poster8.png" alt="Постер: Отель «Гранд Будапешт»">Отель «Гранд Будапешт»</td>
+          <td class="align-center">★★★★★</td>
+          <td class="align-right">142 мин</td>
+        </tr>
+        </tbody>
+        <tfoot>
+        <tr>
+          <td class="align-left" colspan="3">Всего за период</td>
+          <td class="align-right">973 мин</td>
+        </tr>
+        </tfoot>
+      </table>
+    </div>
+  </section>
+  <section class="tile tile-green columns-4">
+    <div class="numbers single-column">
+      <div><b>8</b><small>записей за период</small></div>
+    </div>
+    <p>Отличный темп! Продолжайте отмечать просмотренные фильмы и постепенно собирайте свою личную историю кино.</p>
+  </section>
+  <section class="tile tile-yellow columns-4">
+    <div class="numbers single-column">
+      <div><b>4,5 ★</b><small>средняя оценка</small></div>
+    </div>
+    <p>Оценивайте фильмы, чтобы лучше видеть свои предпочтения и находить новые любимые истории.</p>
+  </section>
+  <section class="tile tile-dark columns-4">
+    <h3>Что записать</h3>
+    <ul>
+      <li>дату просмотра</li>
+      <li>оценку в звёздах</li>
+      <li>короткую рецензию</li>
+    </ul>
+    <button type="button" class="pill-button light">Добавить запись</button>
+  </section>
+</main>
+<footer class="footer">
+  <h2 class="footer-title">Твое кино</h2>
+  <div class="footer-panel">
+    <p>
+      <b>Frame</b>
+      <br>
+      Лабораторная работа № 2
+    </p>
+    <p>
+      <a href="catalog.html">Каталог</a>
+      ·
+      <a href="diary.html">Дневник</a>
+      ·
+      <a href="lists.html">Сборки</a>
+      <br>
+      Проект:
+      <a href="https://github.com/StephanieMalakovich/web6402-malakovich_sv">GitHub</a>
+    </p>
+  </div>
+</footer>
+</body>
+</html>
