@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Дневник</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;800&family=Unbounded:wght@500;800&display=swap&subset=cyrillic" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+<header class="header">
+  <a class="header__logo" href="index.html">Frame</a>
+  <nav class="header__nav nav">
+    <a class="nav__link" href="index.html">Главная</a>
+    <a class="nav__link" href="catalog.html">Каталог</a>
+    <a class="nav__link nav__link--active" href="diary.html" aria-current="page">Дневник</a>
+    <a class="nav__link" href="lists.html">Сборки</a>
+  </nav>
+  <a class="header__button button button--dark button--accent" href="signup.html">Присоединиться</a>
+</header>
+<main class="grid">
+  <section class="tile tile--pink grid__item grid__item--span-5">
+    <h1 class="tile__title tile__title--page">Дневник</h1>
+  </section>
+  <section class="tile tile--light grid__item grid__item--span-7">
+    <p class="tile__lead">Отмечайте просмотренные фильмы, ставьте оценки и сохраняйте свои впечатления, чтобы не потерять ни одной истории.</p>
+  </section>
+  <section class="tile tile--light grid__item grid__item--span-8 grid__item--rows-3">
+    <h2 class="tile__title">Сентябрь – октябрь</h2>
+    <div class="data-table data-table--compact">
+      <table class="data-table__table">
+        <thead>
+        <tr>
+          <th class="data-table__th data-table__th--left">Дата</th>
+          <th class="data-table__th data-table__th--left">Фильм</th>
+          <th class="data-table__th data-table__th--center">Оценка</th>
+          <th class="data-table__th data-table__th--right">Длительность</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr class="data-table__row">
+          <td class="data-table__td data-table__td--left">05.10.2026</td>
+          <td class="data-table__td data-table__td--left"><img class="data-table__poster" src="../images/poster1.png" alt="Постер: Человек-паук">Человек-паук</td>
+          <td class="data-table__td data-table__td--center data-table__td--rating">★★★★★</td>
+          <td class="data-table__td data-table__td--right">106 мин</td>
+        </tr>
+        <tr class="data-table__row">
+          <td class="data-table__td data-table__td--left">03.10.2026</td>
+          <td class="data-table__td data-table__td--left"><img class="data-table__poster" src="../images/poster2.png" alt="Постер: Вот это драма!">Вот это драма!</td>
+          <td class="data-table__td data-table__td--center data-table__td--rating">★★★★★</td>
+          <td class="data-table__td data-table__td--right">132 мин</td>
+        </tr>
+        <tr class="data-table__row">
+          <td class="data-table__td data-table__td--left">29.09.2026</td>
+          <td class="data-table__td data-table__td--left"><img class="data-table__poster" src="../images/poster3.png" alt="Постер: Одиссея">Одиссея</td>
+          <td class="data-table__td data-table__td--center data-table__td--rating">★★★★</td>
+          <td class="data-table__td data-table__td--right">139 мин</td>
+        </tr>
+        <tr class="data-table__row">
+          <td class="data-table__td data-table__td--left">25.09.2026</td>
+          <td class="data-table__td data-table__td--left"><img class="data-table__poster" src="../images/poster4.png" alt="Постер: Унесённые призраками">Унесённые призраками</td>
+          <td class="data-table__td data-table__td--center data-table__td--rating">★★★★★</td>
+          <td class="data-table__td data-table__td--right">125 мин</td>
+        </tr>
+        <tr class="data-table__row">
+          <td class="data-table__td data-table__td--left">21.09.2026</td>
+          <td class="data-table__td data-table__td--left"><img class="data-table__poster" src="../images/poster5.png" alt="Постер: Одержимость">Одержимость</td>
+          <td class="data-table__td data-table__td--center data-table__td--rating">★★★★</td>
+          <td class="data-table__td data-table__td--right">107 мин</td>
+        </tr>
+        <tr class="data-table__row">
+          <td class="data-table__td data-table__td--left">18.09.2026</td>
+          <td class="data-table__td data-table__td--left"><img class="data-table__poster" src="../images/poster6.png" alt="Постер: Драйв">Драйв</td>
+          <td class="data-table__td data-table__td--center data-table__td--rating">★★★★</td>
+          <td class="data-table__td data-table__td--right">100 мин</td>
+        </tr>
+        <tr class="data-table__row">
+          <td class="data-table__td data-table__td--left">12.09.2026</td>
+          <td class="data-table__td data-table__td--left"><img class="data-table__poster" src="../images/poster7.png" alt="Постер: Амели">Амели</td>
+          <td class="data-table__td data-table__td--center data-table__td--rating">★★★★</td>
+          <td class="data-table__td data-table__td--right">122 мин</td>
+        </tr>
+        <tr class="data-table__row">
+          <td class="data-table__td data-table__td--left">10.09.2026</td>
+          <td class="data-table__td data-table__td--left"><img class="data-table__poster" src="../images/poster8.png" alt="Постер: Отель «Гранд Будапешт»">Отель «Гранд Будапешт»</td>
+          <td class="data-table__td data-table__td--center data-table__td--rating">★★★★★</td>
+          <td class="data-table__td data-table__td--right">142 мин</td>
+        </tr>
+        </tbody>
+        <tfoot>
+        <tr>
+          <td class="data-table__td data-table__td--total data-table__td--caption" colspan="3">Всего за период</td>
+          <td class="data-table__td data-table__td--total data-table__td--right">973 мин</td>
+        </tr>
+        </tfoot>
+      </table>
+    </div>
+  </section>
+  <section class="tile tile--green grid__item grid__item--span-4">
+    <div class="stats stats--single">
+      <div class="stats__item"><b class="stats__value">8</b><small class="stats__label">записей за период</small></div>
+    </div>
+    <p class="tile__text">Отличный темп! Продолжайте отмечать просмотренные фильмы и постепенно собирайте свою личную историю кино.</p>
+  </section>
+  <section class="tile tile--yellow grid__item grid__item--span-4">
+    <div class="stats stats--single">
+      <div class="stats__item"><b class="stats__value">4,5 ★</b><small class="stats__label">средняя оценка</small></div>
+    </div>
+    <p class="tile__text">Оценивайте фильмы, чтобы лучше видеть свои предпочтения и находить новые любимые истории.</p>
+  </section>
+  <section class="tile tile--dark grid__item grid__item--span-4">
+    <h3 class="tile__title">Что записать</h3>
+    <ul class="tile__list">
+      <li class="tile__list-item">дату просмотра</li>
+      <li class="tile__list-item">оценку в звёздах</li>
+      <li class="tile__list-item">короткую рецензию</li>
+    </ul>
+    <button type="button" class="button button--light">Добавить запись</button>
+  </section>
+</main>
+<footer class="footer">
+  <h2 class="footer__title">Твое кино</h2>
+  <div class="footer__panel">
+    <p class="footer__text">
+      <b>Frame</b>
+      <br>
+      Лабораторная работа № 4
+    </p>
+    <p class="footer__text">
+      <a class="footer__link" href="catalog.html">Каталог</a>
+      ·
+      <a class="footer__link" href="diary.html">Дневник</a>
+      ·
+      <a class="footer__link" href="lists.html">Сборки</a>
+      ·
+      <a class="footer__link" href="signup.html">Регистрация</a>
+      <br>
+      Проект:
+      <a class="footer__link" href="https://github.com/StephanieMalakovich/web6402-malakovich_sv">GitHub</a>
+    </p>
+  </div>
+</footer>
+</body>
+</html>

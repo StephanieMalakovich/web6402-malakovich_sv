@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Главная</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;800&family=Unbounded:wght@500;800&display=swap&subset=cyrillic" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+<header class="header">
+  <a class="header__logo" href="index.html">Frame</a>
+  <nav class="header__nav nav">
+    <a class="nav__link nav__link--active" href="index.html" aria-current="page">Главная</a>
+    <a class="nav__link" href="catalog.html">Каталог</a>
+    <a class="nav__link" href="diary.html">Дневник</a>
+    <a class="nav__link" href="lists.html">Сборки</a>
+  </nav>
+  <a class="header__button button button--dark button--accent" href="signup.html">Присоединиться</a>
+</header>
+<main class="grid">
+  <section class="tile tile--gradient tile--hero grid__item grid__item--span-8 grid__item--rows-2">
+    <h1 class="tile__title tile__title--page">Смотри<br>Записывай</h1>
+    <p class="tile__lead">Frame – место, где каждый фильм становится частью твоей истории: оценивай, делись впечатлениями и собирай любимые фильмы в подборки.</p>
+    <a class="button button--dark button--accent button--big" href="signup.html">Создать аккаунт</a>
+  </section>
+  <section class="tile tile--purple grid__item grid__item--span-4">
+    <div class="stats">
+      <div class="stats__item"><b class="stats__value">3 000</b><small class="stats__label">фильмов в каталоге</small></div>
+      <div class="stats__item"><b class="stats__value">312 000</b><small class="stats__label">рецензий</small></div>
+      <div class="stats__item"><b class="stats__value">1 000</b><small class="stats__label">сборок</small></div>
+      <div class="stats__item"><b class="stats__value">85 000</b><small class="stats__label">участников</small></div>
+    </div>
+  </section>
+  <section class="tile tile--pink grid__item grid__item--span-4">
+    <h2 class="tile__title">Друзья смотрят</h2>
+    <p class="tile__text">Узнавай, что смотрят друзья, и находи новые фильмы вместе.</p>
+  </section>
+
+  <section class="tile tile--dark filmstrip grid__item grid__item--span-12" aria-label="Сейчас смотрят">
+    <div class="filmstrip__header">
+      <h2 class="tile__title">Сейчас в проекторе</h2>
+    </div>
+    <div class="filmstrip__viewport">
+      <ul class="filmstrip__track">
+        <li class="filmstrip__frame"><img class="filmstrip__poster" src="../images/poster1.png" alt="Постер: Человек-паук"></li>
+        <li class="filmstrip__frame"><img class="filmstrip__poster" src="../images/poster2.png" alt="Постер: Вот это драма!"></li>
+        <li class="filmstrip__frame"><img class="filmstrip__poster" src="../images/poster3.png" alt="Постер: Одиссея"></li>
+        <li class="filmstrip__frame"><img class="filmstrip__poster" src="../images/poster4.png" alt="Постер: Унесённые призраками"></li>
+        <li class="filmstrip__frame"><img class="filmstrip__poster" src="../images/poster5.png" alt="Постер: Одержимость"></li>
+        <li class="filmstrip__frame"><img class="filmstrip__poster" src="../images/poster6.png" alt="Постер: Драйв"></li>
+        <li class="filmstrip__frame"><img class="filmstrip__poster" src="../images/poster7.png" alt="Постер: Амели"></li>
+        <li class="filmstrip__frame"><img class="filmstrip__poster" src="../images/poster8.png" alt="Постер: Отель «Гранд Будапешт»"></li>
+        <li class="filmstrip__frame" aria-hidden="true"><img class="filmstrip__poster" src="../images/poster1.png" alt=""></li>
+        <li class="filmstrip__frame" aria-hidden="true"><img class="filmstrip__poster" src="../images/poster2.png" alt=""></li>
+        <li class="filmstrip__frame" aria-hidden="true"><img class="filmstrip__poster" src="../images/poster3.png" alt=""></li>
+        <li class="filmstrip__frame" aria-hidden="true"><img class="filmstrip__poster" src="../images/poster4.png" alt=""></li>
+        <li class="filmstrip__frame" aria-hidden="true"><img class="filmstrip__poster" src="../images/poster5.png" alt=""></li>
+        <li class="filmstrip__frame" aria-hidden="true"><img class="filmstrip__poster" src="../images/poster6.png" alt=""></li>
+        <li class="filmstrip__frame" aria-hidden="true"><img class="filmstrip__poster" src="../images/poster7.png" alt=""></li>
+        <li class="filmstrip__frame" aria-hidden="true"><img class="filmstrip__poster" src="../images/poster8.png" alt=""></li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="tile tile--yellow grid__item grid__item--span-4">
+    <h2 class="tile__title">Каталог</h2>
+    <p class="tile__text">Тысячи фильмов с оценками и рецензиями зрителей.</p>
+    <a class="button button--dark" href="catalog.html">Открыть каталог</a>
+  </section>
+  <section class="tile tile--green grid__item grid__item--span-4">
+    <h2 class="tile__title">Дневник</h2>
+    <p class="tile__text">Отмечай просмотры, ставь звёзды и пиши заметки.</p>
+    <a class="button button--dark" href="diary.html">Открыть дневник</a>
+  </section>
+  <section class="tile tile--dark grid__item grid__item--span-4">
+    <h2 class="tile__title">Сборки</h2>
+    <p class="tile__text">Собирай подборки по настроению, режиссёру или сезону.</p>
+    <a class="button button--light" href="lists.html">Смотреть сборки</a>
+  </section>
+</main>
+<footer class="footer">
+  <h2 class="footer__title">Твое кино</h2>
+  <div class="footer__panel">
+    <p class="footer__text">
+      <b>Frame</b>
+      <br>
+      Лабораторная работа № 4
+    </p>
+    <p class="footer__text">
+      <a class="footer__link" href="catalog.html">Каталог</a>
+      ·
+      <a class="footer__link" href="diary.html">Дневник</a>
+      ·
+      <a class="footer__link" href="lists.html">Сборки</a>
+      ·
+      <a class="footer__link" href="signup.html">Регистрация</a>
+      <br>
+      Проект:
+      <a class="footer__link" href="https://github.com/StephanieMalakovich/web6402-malakovich_sv">GitHub</a>
+    </p>
+  </div>
+</footer>
+</body>
+</html>
