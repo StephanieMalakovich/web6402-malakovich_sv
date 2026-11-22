@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Каталог</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;800&family=Unbounded:wght@500;800&display=swap&subset=cyrillic" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+<header class="header">
+  <a class="header__logo" href="index.html">Frame</a>
+  <nav class="header__nav nav">
+    <a class="nav__link" href="index.html">Главная</a>
+    <a class="nav__link nav__link--active" href="catalog.html" aria-current="page">Каталог</a>
+    <a class="nav__link" href="diary.html">Дневник</a>
+    <a class="nav__link" href="lists.html">Сборки</a>
+  </nav>
+  <a class="header__button button button--dark button--accent" href="signup.html">Присоединиться</a>
+</header>
+<main class="grid">
+  <section class="tile tile--purple grid__item grid__item--span-8">
+    <h1 class="tile__title tile__title--page">Каталог</h1>
+    <p class="tile__lead">От культовой классики до самых свежих кинопремьер.</p>
+  </section>
+  <section class="tile tile--green grid__item grid__item--span-4">
+    <h2 class="tile__title">3 000</h2>
+    <p class="tile__text">самых разнообразных фильмов на любой вкус.</p>
+  </section>
+  <section class="tile tile--light grid__item grid__item--span-8">
+    <h2 class="tile__title">Топ месяца</h2>
+    <div class="data-table">
+      <table class="data-table__table">
+        <thead>
+        <tr>
+          <th class="data-table__th data-table__th--left">Фильм</th>
+          <th class="data-table__th data-table__th--center">Оценка</th>
+          <th class="data-table__th data-table__th--right">Год</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr class="data-table__row">
+          <td class="data-table__td data-table__td--left"><img class="data-table__poster" src="../images/poster1.png" alt="Постер: Человек-паук">Человек-паук</td>
+          <td class="data-table__td data-table__td--center data-table__td--rating">★★★★★</td>
+          <td class="data-table__td data-table__td--right">2026</td>
+        </tr>
+        <tr class="data-table__row">
+          <td class="data-table__td data-table__td--left"><img class="data-table__poster" src="../images/poster3.png" alt="Постер: Одиссея">Одиссея</td>
+          <td class="data-table__td data-table__td--center data-table__td--rating">★★★★★</td>
+          <td class="data-table__td data-table__td--right">2026</td>
+        </tr>
+        <tr class="data-table__row">
+          <td class="data-table__td data-table__td--left"><img class="data-table__poster" src="../images/poster2.png" alt="Постер: Вот это драма!">Вот это драма!</td>
+          <td class="data-table__td data-table__td--center data-table__td--rating">★★★★</td>
+          <td class="data-table__td data-table__td--right">2026</td>
+        </tr>
+        <tr class="data-table__row">
+          <td class="data-table__td data-table__td--left"><img class="data-table__poster" src="../images/poster6.png" alt="Постер: Драйв">Драйв</td>
+          <td class="data-table__td data-table__td--center data-table__td--rating">★★★</td>
+          <td class="data-table__td data-table__td--right">2011</td>
+        </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+  <section class="tile tile--pink grid__item grid__item--span-4">
+    <h2 class="tile__title">Выбор недели</h2>
+    <p class="tile__text">«Человек-паук» и «Одиссея» набирают популярность среди зрителей. Самое время узнать, почему эти фильмы стоит добавить в свой список просмотра.</p>
+  </section>
+  <article class="tile tile--light film-card grid__item grid__item--span-3">
+    <img class="film-card__poster" src="../images/poster1.png" alt="Постер: Человек-паук">
+    <h3 class="film-card__title">Человек-паук</h3>
+    <p class="film-card__meta">Дестин Креттон, 2026</p>
+  </article>
+  <article class="tile tile--light film-card grid__item grid__item--span-3">
+    <img class="film-card__poster" src="../images/poster2.png" alt="Постер: Вот это драма!">
+    <h3 class="film-card__title">Вот это драма!</h3>
+    <p class="film-card__meta">Кристофер Боргли, 2026</p>
+  </article>
+  <article class="tile tile--light film-card grid__item grid__item--span-3">
+    <img class="film-card__poster" src="../images/poster3.png" alt="Постер: Одиссея">
+    <h3 class="film-card__title">Одиссея</h3>
+    <p class="film-card__meta">Кристофер Нолан, 2026</p>
+  </article>
+  <article class="tile tile--light film-card grid__item grid__item--span-3">
+    <img class="film-card__poster" src="../images/poster4.png" alt="Постер: Унесённые призраками">
+    <h3 class="film-card__title">Унесённые призраками</h3>
+    <p class="film-card__meta">Хаяо Миядзаки, 2001</p>
+  </article>
+  <article class="tile tile--light film-card grid__item grid__item--span-3">
+    <img class="film-card__poster" src="../images/poster5.png" alt="Постер: Одержимость">
+    <h3 class="film-card__title">Одержимость</h3>
+    <p class="film-card__meta">Дэмьен Шазелл, 2014</p>
+  </article>
+  <article class="tile tile--light film-card grid__item grid__item--span-3">
+    <img class="film-card__poster" src="../images/poster6.png" alt="Постер: Драйв">
+    <h3 class="film-card__title">Драйв</h3>
+    <p class="film-card__meta">Николас Рефн, 2011</p>
+  </article>
+  <article class="tile tile--light film-card grid__item grid__item--span-3">
+    <img class="film-card__poster" src="../images/poster7.png" alt="Постер: Амели">
+    <h3 class="film-card__title">Амели</h3>
+    <p class="film-card__meta">Жан-Пьер Жёне, 2001</p>
+  </article>
+  <article class="tile tile--light film-card grid__item grid__item--span-3">
+    <img class="film-card__poster" src="../images/poster8.png" alt="Постер: Отель «Гранд Будапешт»">
+    <h3 class="film-card__title">Отель «Гранд Будапешт»</h3>
+    <p class="film-card__meta">Уэс Андерсон, 2014</p>
+  </article>
+  <div class="grid__item grid__item--span-12 grid__item--center">
+    <button type="button" class="button button--light button--big">Показать ещё</button>
+  </div>
+</main>
+<footer class="footer">
+  <h2 class="footer__title">Твое кино</h2>
+  <div class="footer__panel">
+    <p class="footer__text">
+      <b>Frame</b>
+      <br>
+      Лабораторная работа № 4
+    </p>
+    <p class="footer__text">
+      <a class="footer__link" href="catalog.html">Каталог</a>
+      ·
+      <a class="footer__link" href="diary.html">Дневник</a>
+      ·
+      <a class="footer__link" href="lists.html">Сборки</a>
+      ·
+      <a class="footer__link" href="signup.html">Регистрация</a>
+      <br>
+      Проект:
+      <a class="footer__link" href="https://github.com/StephanieMalakovich/web6402-malakovich_sv">GitHub</a>
+    </p>
+  </div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Регистрация</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;800&family=Unbounded:wght@500;800&display=swap&subset=cyrillic" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+<header class="header">
+  <a class="header__logo" href="index.html">Frame</a>
+  <nav class="header__nav nav">
+    <a class="nav__link" href="index.html">Главная</a>
+    <a class="nav__link" href="catalog.html">Каталог</a>
+    <a class="nav__link" href="diary.html">Дневник</a>
+    <a class="nav__link" href="lists.html">Сборки</a>
+  </nav>
+  <a class="header__button button button--dark button--accent" href="signup.html">Присоединиться</a>
+</header>
+<main class="auth">
+  <div class="auth__aside">
+    <section class="tile tile--pink auth__intro">
+      <h1 class="tile__title auth__title">Регистрация</h1>
+      <p class="tile__text">Создай аккаунт, чтобы вести дневник просмотров, ставить оценки и собирать свои подборки фильмов.</p>
+    </section>
+    <section class="tile tile--green auth__perks-tile">
+      <div>
+        <h2 class="tile__title">Что даёт аккаунт</h2>
+        <p class="tile__text">Все просмотры в одном месте: с датами, оценками и заметками. А ещё подборки, которыми можно делиться с друзьями.</p>
+      </div>
+      <ul class="auth__perks">
+        <li class="auth__perk">Дневник</li>
+        <li class="auth__perk">Оценки</li>
+        <li class="auth__perk">Сборки</li>
+        <li class="auth__perk">Друзья</li>
+      </ul>
+    </section>
+  </div>
+
+  <section class="tile tile--light auth__card">
+    <form class="form" id="signup-form" action="#" method="post">
+      <div class="form__field">
+        <label class="form__label" for="login">Логин</label>
+        <input class="form__input" type="text" id="login" name="login" required minlength="3" maxlength="20"
+               placeholder="movie_fan" autocomplete="username">
+      </div>
+
+      <div class="form__field">
+        <label class="form__label" for="email">E-mail</label>
+        <input class="form__input" type="email" id="email" name="email" required placeholder="you@example.com" autocomplete="email">
+      </div>
+
+      <div class="form__field">
+        <label class="form__label" for="password">Пароль</label>
+        <input class="form__input" type="password" id="password" name="password" required minlength="6" autocomplete="new-password">
+        <p class="form__hint">Не менее 6 символов</p>
+      </div>
+
+      <label class="form__checkbox">
+        <input class="form__checkbox-input" type="checkbox" id="agreement" name="agreement" required>
+        <span>Я согласен(-на) на обработку персональных данных</span>
+      </label>
+
+      <div class="form__footer">
+        <button class="form__submit button button--dark button--accent button--big" type="submit">Отправить</button>
+      </div>
+    </form>
+  </section>
+</main>
+<footer class="footer">
+  <h2 class="footer__title">Твое кино</h2>
+  <div class="footer__panel">
+    <p class="footer__text">
+      <b>Frame</b>
+      <br>
+      Лабораторная работа № 4
+    </p>
+    <p class="footer__text">
+      <a class="footer__link" href="catalog.html">Каталог</a>
+      ·
+      <a class="footer__link" href="diary.html">Дневник</a>
+      ·
+      <a class="footer__link" href="lists.html">Сборки</a>
+      ·
+      <a class="footer__link" href="signup.html">Регистрация</a>
+      <br>
+      Проект:
+      <a class="footer__link" href="https://github.com/StephanieMalakovich/web6402-malakovich_sv">GitHub</a>
+    </p>
+  </div>
+</footer>
+<script src="../js/signup.js"></script>
+</body>
+</html>
